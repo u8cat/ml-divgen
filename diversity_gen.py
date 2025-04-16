@@ -3,6 +3,7 @@ import pickle
 import transformers
 from tqdm import tqdm
 import datasets
+import os
 
 
 def generate_samples(model_name_or_path, num_samples, dataset, max_length,device='cpu'):
@@ -55,6 +56,10 @@ def main():
     
     
     args = parser.parse_args()
+    
+    if not os.path.exists(args.output_dir):
+        print(f"Creating output directory {args.output_dir}")
+        os.makedirs(args.output_dir)
     
     model_list = [
         'EleutherAI/pythia-2.8b',
