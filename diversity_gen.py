@@ -1,12 +1,14 @@
 import argparse
 import pickle
 import transformers
+import torch
 from tqdm import tqdm
 import datasets
 import os
+from utils import apply_template
 
 
-def generate_samples(model_name_or_path, num_samples, dataset, max_length,device='cpu'):
+def generate_samples(model_name_or_path, num_samples, dataset, max_length, device='cpu'):
     """
     Generate samples from a pre-trained model.
     Args:
@@ -45,15 +47,73 @@ def generate_samples(model_name_or_path, num_samples, dataset, max_length,device
         samples.append({"prompt": prompt, "generated_logits": all_output})
     return samples
 
+
+def forward_and_get_logits(model_name_or_path, num_samples, dataset_name, dataset_split, max_length, device='cpu'):
+    """
+    Forward the data samples throught models and get logit vectors.
+    Args:
+        model_name_or_path (str): Path to the pre-trained model.
+        num_samples (int): Number of samples to generate.
+        dataset_name (str): Dataset to use for generation.
+        dataset_split (str): Dataset split to use for generation.
+        max_length (int): Maximum length of story tokens, where we obtain logits upon.
+        device (str): Device to use for generation.
+    Returns:
+        List of dicts.
+        {
+            "prompt": str: the story prompt,
+            "generated_logits": List of generated logits
+        }
+    """
+    model = transformers.AutoModelForCausalLM.from_pretrained(model_name_or_path)
+    tokenizer = transformers.AutoTokenizer.from_pretrained(model_name_or_path)
+
+    model = model.to(device)
+    model.eval()
+
+    dataset = datasets.load_dataset(dataset_name, split=dataset_split)
+    dataset = dataset.shuffle(seed=2025)
+    
+    samples = []
+    all_entropy = []
+    
+    for i in tqdm(range(num_samples)):
+        prompt, story = apply_template(dataset[i]["prompt"], model_name_or_path), dataset[i]["story"] # HACK hardcoded the column name for now
+        prompt_ids = tokenizer(prompt, return_tensors="pt").input_ids.to(device)
+        story_ids = tokenizer(story, return_tensors="pt", truncation=True, max_length=max_length).input_ids.to(device)
+        prompt_len = prompt_ids.shape[1]
+
+        input_ids = torch.cat([prompt_ids, story_ids], dim=1)
+
+        with torch.no_grad():
+            outputs = model(input_ids)
+        story_logits = outputs.logits[0, prompt_len-1:, :].squeeze(0).detach().cpu()
+
+        # TODO top k entropy
+        p = torch.softmax(story_logits, dim=-1)
+        token_entropy = -torch.sum(p * torch.log(p + 1e-10), dim=-1)
+        avg_entropy = torch.mean(token_entropy).item()
+        all_entropy.append(avg_entropy)
+
+        samples.append({
+            "prompt": prompt,
+            "story": story,
+            "generated_logits": story_logits,
+        })
+
+    return samples, all_entropy
+
+        
 def main():
     parser = argparse.ArgumentParser()
     #parser.add_argument("--model_name_or_path", type=str, default="EleutherAI/pythia-1.4b")
     parser.add_argument("--output_dir", type=str, default="model_outputs")
-    parser.add_argument("--num_samples", type=int, default=5)
-    parser.add_argument("--dataset", type=str, default="euclaise/writingprompts")
-    parser.add_argument("--max_length", type=int, default=5)
+    parser.add_argument("--num_samples", type=int, default=100)
+    parser.add_argument("--dataset_name", type=str, default="euclaise/writingprompts")
+    parser.add_argument("--dataset_split", type=str, default="validation")
+    parser.add_argument("--max_length", type=int, default=50)
     parser.add_argument("--device", type=str, default="cuda")
-    
+
     
     args = parser.parse_args()
     
@@ -63,12 +123,19 @@ def main():
     
     model_list = [
         'EleutherAI/pythia-2.8b',
-        'ContextualAI/archangel_sft_pythia2-8b'
+        'ContextualAI/archangel_sft_pythia2-8b',
+        'ContextualAI/archangel_sft-ppo_pythia2-8b',
+        'ContextualAI/archangel_sft-dpo_pythia2-8b',
     ]
     for model_name_or_path in model_list:
         print(f"Generating samples for {model_name_or_path}")
-        samples = generate_samples(model_name_or_path, args.num_samples, args.dataset, args.max_length,device=args.device)
-        output_file = f"{args.output_dir}/{model_name_or_path.replace('/', '_')}_{args.dataset.replace('/', '_')}_samples_{args.num_samples}.pkl"
+        samples, all_entropy = forward_and_get_logits(model_name_or_path, args.num_samples, args.dataset_name, args.dataset_split, args.max_length, device=args.device)
+        
+        # report average entropy
+        avg_entropy = sum(all_entropy) / len(all_entropy)
+        print(f"Average entropy: {avg_entropy}")
+
+        output_file = f"{args.output_dir}/{model_name_or_path.replace('/', '_')}_{args.dataset_name.replace('/', '_')}_{args.dataset_split}_samples_{args.num_samples}.pkl"
         with open(output_file, "wb") as f:
             pickle.dump(samples, f)
         print(f"Samples saved to {output_file}")
