@@ -1,0 +1,7 @@
+numpy
+sacrebleu
+transformers
+torch
+tqdm
+datasets
+nltk >= 3.9.1 # https://github.com/nltk/nltk/issues/3250 https://github.com/nltk/nltk/pull/3207
