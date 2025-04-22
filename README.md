@@ -16,4 +16,5 @@
   - "generated_logits": torch.tensor size(51,50304). Each column vector corresponds to the next-token logit distribution of the last position in the prompt tokens and the first 50 positions in the story tokens. For instance, the 10th column in this matrix corresponds to the next token that succeeds the prompt and the first 9 tokens in the story.
 
 ### Updates and Acknowledgements
+* 2025-04-21: Added the generation mode in `diversity_gen.py`. 
 * 2025-04-19: Thx Bale for generating logits and beautifully written code for plots (Bale: in colab with copilot XD).
