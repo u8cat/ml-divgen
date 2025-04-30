@@ -1,0 +1,24 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] Write the letter that you always wanted to , but never did .
+
+<|assistant|>
+
+
+Sample Index: 49
+Token Position: 47
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+512        ' all'          0.222832        0.191078        0.031754       
+15         '.'             0.123791        0.162058        -0.038267      
+13         ','             0.073986        0.060518        0.013469       
+8791       ' anyway'       0.071755        0.047725        0.024029       
+285        ' and'          0.059798        0.052342        0.007456       
+323        ' for'          0.033795        0.034996        -0.001201      
+964        ' .'            0.025432        0.036494        -0.011062      
+1157       ' ,'            0.022928        0.026943        -0.004016      
+275        ' in'           0.021595        0.022874        -0.001279      
+969        ' again'        0.019423        0.021080        -0.001657      
+3430       ' wrong'        0.020668        0.012634        0.008034       

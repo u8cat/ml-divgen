@@ -1,0 +1,24 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ IP ] Abandoned Train Tunnel
+
+<|assistant|>
+
+
+Sample Index: 29
+Token Position: 49
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+6331       ' stopped'      0.073330        0.054358        0.018971       
+1904       ' didn'         0.063204        0.057831        0.005373       
+3261       ' looked'       0.051671        0.039233        0.012438       
+3531       ' turned'       0.041848        0.031470        0.010378       
+22638      ' shrugged'     0.046989        0.025677        0.021312       
+369        ' was'          0.025350        0.035253        -0.009904      
+11898      ' shook'        0.040184        0.019054        0.021130       
+7428       ' walked'       0.026467        0.031155        -0.004688      
+19925      ' paused'       0.031691        0.021108        0.010583       
+574        ' had'          0.018714        0.029119        -0.010404      
+812        ' could'        0.017104        0.024210        -0.007107      

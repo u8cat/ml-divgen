@@ -1,0 +1,24 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] A video game hero starts losing faith in his quest as he is besieged by game-breaking mechanics .
+
+<|assistant|>
+
+
+Sample Index: 22
+Token Position: 23
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+320        ' be'           0.187487        0.187317        0.000170       
+5321       ' save'         0.070351        0.058393        0.011957       
+452        ' have'         0.031754        0.039381        -0.007626      
+755        ' get'          0.033252        0.036220        -0.002967      
+564        ' go'           0.037078        0.029428        0.007650       
+1056       ' make'         0.029929        0.030653        -0.000724      
+3330       ' win'          0.017994        0.021848        -0.003854      
+1089       ' find'         0.017369        0.019362        -0.001993      
+897        ' use'          0.017735        0.016467        0.001269       
+816        ' just'         0.018948        0.013201        0.005747       
+7171       ' beat'         0.009372        0.013739        -0.004366      

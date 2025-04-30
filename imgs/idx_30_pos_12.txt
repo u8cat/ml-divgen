@@ -1,0 +1,25 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] Your whole life you had an ability that seemed normal to you . Now you realized you 're the only one with this ability .
+
+<|assistant|>
+
+
+Sample Index: 30
+Token Position: 12
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+670        ' about'        0.694618        0.726247        -0.031629      
+1469       ' going'        0.091385        0.069824        0.021560       
+9369       ' happening'    0.061203        0.042899        0.018304       
+281        ' to'           0.026692        0.023595        0.003097       
+327        ' on'           0.018319        0.023246        -0.004927      
+275        ' in'           0.020723        0.019990        0.000733       
+326        ' that'         0.022089        0.018006        0.004083       
+387        ' at'           0.006656        0.007513        -0.000857      
+390        ' or'           0.005099        0.006441        -0.001341      
+13         ','             0.005746        0.004810        0.000936       
+9355       ' planned'      0.005268        0.004981        0.000286       
+187        '\n'            0.001424        0.005365        -0.003941      

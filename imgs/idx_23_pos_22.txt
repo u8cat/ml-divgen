@@ -1,0 +1,23 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] A story where all the dialogue is lyrics from your favorite song .
+
+<|assistant|>
+
+
+Sample Index: 23
+Token Position: 22
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+1728       ' home'         0.211039        0.187874        0.023166       
+2419       ' house'        0.184589        0.152312        0.032277       
+747        ' new'          0.086435        0.083972        0.002463       
+2021       ' family'       0.080742        0.086558        -0.005816      
+4651       ' parents'      0.033375        0.043461        -0.010086      
+1943       ' big'          0.027850        0.015347        0.012502       
+1211       ' own'          0.012498        0.020741        -0.008243      
+3392       ' father'       0.013094        0.019421        -0.006327      
+7583       ' favorite'     0.017409        0.012280        0.005129       
+1659       ' place'        0.014118        0.012376        0.001742       

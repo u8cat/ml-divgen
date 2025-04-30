@@ -1,0 +1,27 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] A sketchy salesman attempts to sell a perfectly normal sword to the hero , passing it off as the sword of legends .
+
+<|assistant|>
+
+
+Sample Index: 53
+Token Position: 23
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+14228      ' sword'        0.061018        0.099586        -0.038568      
+1652       ' little'       0.016901        0.016886        0.000015       
+2774       ' moment'       0.014493        0.014608        -0.000115      
+637        ' man'          0.013730        0.009895        0.003835       
+1355       ' small'        0.009221        0.009245        -0.000024      
+1270       ' great'        0.012095        0.006328        0.005767       
+8815       ' horse'        0.007183        0.011196        -0.004014      
+17874      ' noble'        0.010455        0.007584        0.002872       
+14061      'wait'          0.009959        0.007595        0.002364       
+2969       ' simple'       0.009636        0.007545        0.002091       
+30605      ' knight'       0.009706        0.006992        0.002714       
+2014       ' single'       0.006641        0.009947        -0.003306      
+3331       ' friend'       0.009781        0.005867        0.003914       
+15096      ' blade'        0.006707        0.008128        -0.001421      

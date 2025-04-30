@@ -1,0 +1,25 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] In a dystopian future where people are separated based on the Six Flavours , you are the first true Alltongue .
+
+<|assistant|>
+
+
+Sample Index: 5
+Token Position: 17
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+21583      ' chairs'       0.520721        0.502278        0.018443       
+5148       ' metal'        0.037865        0.030879        0.006986       
+10194      ' steel'        0.028821        0.030534        -0.001714      
+13         ','             0.020056        0.024026        -0.003970      
+7180       ' tables'       0.016578        0.023797        -0.007219      
+3168       ' white'        0.013297        0.015566        -0.002268      
+4430       ' arm'          0.014302        0.014274        0.000028       
+14872      ' wooden'       0.013666        0.014891        -0.001225      
+9711       ' silver'       0.007422        0.006052        0.001370       
+2502       ' red'          0.005679        0.007433        -0.001754      
+31361      ' stainless'    0.007276        0.005788        0.001488       
+2806       ' black'        0.005563        0.007434        -0.001871      

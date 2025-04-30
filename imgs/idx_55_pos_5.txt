@@ -1,0 +1,26 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] You accidentally discover the sentence of death ( a sentence that kills anyone who hears it except the speaker ) when you say it over national television .
+
+<|assistant|>
+
+
+Sample Index: 55
+Token Position: 5
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+752        ' what'         0.185097        0.213352        -0.028255      
+604        ' if'           0.174703        0.167188        0.007515       
+849        ' how'          0.142484        0.167967        -0.025484      
+2139       ' why'          0.072554        0.130763        -0.058209      
+670        ' about'        0.063603        0.035502        0.028100       
+13         ','             0.056922        0.009063        0.047858       
+253        ' the'          0.022875        0.032431        -0.009556      
+835        ' where'        0.021039        0.026065        -0.005027      
+15         '.'             0.038507        0.005856        0.032651       
+665        ' who'          0.011136        0.021151        -0.010015      
+1199       ' much'         0.010963        0.016514        -0.005551      
+326        ' that'         0.017915        0.007958        0.009957       
+1880       ' whether'      0.005941        0.015098        -0.009157      

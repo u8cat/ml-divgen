@@ -1,0 +1,25 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] You found a picture of you and your mom from childhood , and realize she 's not aged a day . You and your siblings then come to the realization that none of you have ever seen her sleep .
+
+<|assistant|>
+
+
+Sample Index: 35
+Token Position: 24
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+2143       ' school'       0.240183        0.151803        0.088380       
+619        ' my'           0.188339        0.180036        0.008303       
+253        ' the'          0.041664        0.054147        -0.012483      
+247        ' a'            0.031559        0.045422        -0.013863      
+23129      ' grades'       0.036735        0.027529        0.009205       
+12392      ' studying'     0.022863        0.016155        0.006708       
+2675       ' social'       0.020223        0.017360        0.002863       
+326        ' that'         0.016169        0.016349        -0.000180      
+3958       ' games'        0.010914        0.019169        -0.008255      
+32110      ' homework'     0.017508        0.012266        0.005242       
+15169      ' phones'       0.010801        0.017196        -0.006394      
+34666      ' exams'        0.012906        0.011931        0.000975       

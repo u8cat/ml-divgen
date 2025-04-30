@@ -1,0 +1,24 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] Stars have brilliant deaths , large explosions given a beautiful name . Men are granted nothing so glorious .
+
+<|assistant|>
+
+
+Sample Index: 4
+Token Position: 47
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+369        ' was'          0.169732        0.179314        -0.009583      
+3543       ' felt'         0.062780        0.061537        0.001242       
+812        ' could'        0.059179        0.061527        -0.002348      
+574        ' had'          0.054450        0.063558        -0.009108      
+1871       "'d"            0.031606        0.028594        0.003012       
+4571       ' couldn'       0.030431        0.025443        0.004988       
+3597       ' tried'        0.029989        0.025046        0.004943       
+3260       ' knew'         0.026073        0.028270        -0.002197      
+3261       ' looked'       0.025151        0.022035        0.003116       
+2242       ' lay'          0.011880        0.014577        -0.002696      
+1904       ' didn'         0.012783        0.012613        0.000170       

@@ -1,0 +1,24 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] The rusted , mechanical switch sat on the table of the abandoned , run-down log cabin located , deep in the Allegheny Forest . A crude message was carved into the table with an arrow pointing to the switch , `` Do n't '' .
+
+<|assistant|>
+
+
+Sample Index: 92
+Token Position: 36
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+497        ' were'         0.371552        0.343686        0.027866       
+574        ' had'          0.255056        0.278426        -0.023370      
+1871       "'d"            0.058609        0.045586        0.013023       
+6331       ' stopped'      0.026861        0.023356        0.003505       
+8715       ' hadn'         0.023003        0.022840        0.000163       
+10345      ' weren'        0.017849        0.016015        0.001834       
+512        ' all'          0.012409        0.014526        -0.002117      
+7428       ' walked'       0.013770        0.012791        0.000980       
+4425       ' decided'      0.011685        0.013958        -0.002273      
+1119       ' found'        0.010149        0.010999        -0.000849      
+457        '’'             0.013434        0.000743        0.012691       

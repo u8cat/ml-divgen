@@ -1,0 +1,26 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ PI ] You 're the lone survivor of a zombie apocalypse simply because zombies are n't interested in you .
+
+<|assistant|>
+
+
+Sample Index: 85
+Token Position: 17
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+1583       ' They'         0.193792        0.133215        0.060578       
+187        '\n'            0.119873        0.190025        -0.070151      
+1422       ' You'          0.052897        0.092398        -0.039501      
+380        ' The'          0.070272        0.058860        0.011412       
+209        ' '             0.034699        0.002381        0.032318       
+50276      '  '            0.018305        0.017572        0.000732       
+5402       ' Your'         0.008804        0.026762        -0.017958      
+1244       ' And'          0.017264        0.012937        0.004327       
+7160       ' Their'        0.017364        0.011161        0.006203       
+1292       ' But'          0.015248        0.012382        0.002866       
+496        ' In'           0.011460        0.014009        -0.002549      
+535        '\n\n'          0.000264        0.022741        -0.022478      
+309        ' I'            0.014528        0.003443        0.011085       

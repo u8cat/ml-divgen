@@ -1,0 +1,25 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] You 're attending a public event turning on the Christmas lights in your home town , but as soon as you arrive , a young man slips a small piece of paper in your hand , it reads `` 3 MINUTES , GUY WITH THE RED JACKET , ONLY YOU CAN STOP HIM , 223 , DO N'T FORGET THAT NUMBER ''
+
+<|assistant|>
+
+
+Sample Index: 6
+Token Position: 12
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+13         ','             0.318349        0.234980        0.083369       
+91         'z'             0.305681        0.177249        0.128432       
+661        'ks'            0.141835        0.318009        -0.176174      
+2721       'ze'            0.039783        0.037175        0.002607       
+364        ' wh'           0.021589        0.019968        0.001621       
+14         '-'             0.010996        0.017360        -0.006364      
+8260       'zer'           0.005872        0.012544        -0.006672      
+309        ' I'            0.011735        0.006183        0.005551       
+1157       ' ,'            0.005081        0.010142        -0.005061      
+70         'e'             0.006176        0.008259        -0.002083      
+6701       ' thanks'       0.009428        0.004596        0.004832       
+2          '!'             0.006052        0.006097        -0.000044      

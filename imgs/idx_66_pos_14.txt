@@ -1,0 +1,27 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] Write a day in the life of a person who lives in a world where no one sleeps .
+
+<|assistant|>
+
+
+Sample Index: 66
+Token Position: 14
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+253        ' the'          0.153563        0.195472        -0.041909      
+767        ' two'          0.067957        0.076091        -0.008133      
+789        ' work'         0.072081        0.054565        0.017517       
+247        ' a'            0.056280        0.058873        -0.002593      
+634        ' your'         0.025398        0.040110        -0.014712      
+50123      ' deadlines'    0.030104        0.014965        0.015139       
+6612       ' reality'      0.012925        0.023724        -0.010800      
+898        ' 9'            0.023863        0.012140        0.011723       
+20490      ' worlds'       0.010202        0.016408        -0.006206      
+436        ' this'         0.013318        0.011901        0.001416       
+1495       ' life'         0.009519        0.014117        -0.004598      
+13702      ' dreams'       0.006812        0.016491        -0.009679      
+12225      ' meetings'     0.013870        0.004444        0.009426       
+619        ' my'           0.013538        0.003641        0.009897       

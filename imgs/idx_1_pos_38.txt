@@ -1,0 +1,25 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] A robber breaks into your house at the worst moment possible : while you have diarrhea .
+
+<|assistant|>
+
+
+Sample Index: 1
+Token Position: 38
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+344        ' he'           0.379643        0.321198        0.058444       
+310        ' is'           0.296808        0.331995        -0.035187      
+13         ','             0.076562        0.093379        -0.016817      
+588        ' will'         0.035692        0.034303        0.001390       
+6277       ' Michael'      0.011452        0.034326        -0.022873      
+352        ' it'           0.018812        0.022024        -0.003212      
+521        ' his'          0.018781        0.020258        -0.001477      
+369        ' was'          0.022490        0.007558        0.014932       
+457        '’'             0.012794        0.007689        0.005104       
+556        ' has'          0.010998        0.008236        0.002762       
+253        ' the'          0.008751        0.008028        0.000722       
+434        "'s"            0.004338        0.009880        -0.005541      

@@ -1,0 +1,23 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] To keep up with challenges by mortals , Death must master every new game that comes up . But there 's one game that he just ca n't figure out for the death of him .
+
+<|assistant|>
+
+
+Sample Index: 2
+Token Position: 28
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+309        ' I'            0.395988        0.350354        0.045634       
+253        ' the'          0.095824        0.103133        -0.007309      
+4720       ' finally'      0.063956        0.077711        -0.013755      
+1024       ' now'          0.049853        0.070455        -0.020601      
+581        ' one'          0.046600        0.053158        -0.006558      
+14645      ' Death'        0.052187        0.034256        0.017930       
+387        ' at'           0.037559        0.046354        -0.008795      
+619        ' my'           0.038182        0.035459        0.002723       
+627        ' there'        0.021250        0.021833        -0.000583      
+2471       ' death'        0.027231        0.014727        0.012503       

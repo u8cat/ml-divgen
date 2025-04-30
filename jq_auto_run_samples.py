@@ -60,6 +60,8 @@ def plot_top_k_distribution_comparison(sample_a, sample_b, tokenizer, token_pos,
     plt.xticks(x, token_labels, rotation=45, ha='right')
     plt.legend()
     plt.tight_layout()
+    
+    return combined_top_k, token_labels, combined_probs_a, combined_probs_b
 
 # Create imgs directory if it doesn't exist
 os.makedirs('imgs', exist_ok=True)
@@ -68,13 +70,13 @@ os.makedirs('imgs', exist_ok=True)
 for i in range(50):
     # Randomly select sample index and token position
     sample_idx = random.randint(0, len(post_samples)-1)
-    token_pos = random.randint(0, 51)  # Assuming max token length is 100
+    token_pos = random.randint(0, 50)  # Assuming max token length is 100
     
     # Create figure
     plt.figure(figsize=(16, 6))
     
-    # Plot comparison
-    plot_top_k_distribution_comparison(
+    # Plot comparison and get probability data
+    combined_top_k, token_labels, combined_probs_a, combined_probs_b = plot_top_k_distribution_comparison(
         post_samples[sample_idx], 
         base_samples[sample_idx], 
         tokenizer,
@@ -85,7 +87,22 @@ for i in range(50):
     )
     
     # Save figure with specified naming format
-    plt.savefig(f'imgs/idx_{sample_idx}_pos_{token_pos}.png')
+    filename_base = f'imgs/idx_{sample_idx}_pos_{token_pos}'
+    plt.savefig(f'{filename_base}.png')
     plt.close()
     
-    print(f'Saved image {i+1}/50: idx_{sample_idx}_pos_{token_pos}.png') 
+    # Save prefix and probability information to text file
+    prefix = post_samples[sample_idx]['prompt']
+    with open(f'{filename_base}.txt', 'w', encoding='utf-8') as f:
+        f.write(f'Prefix:\n{prefix}\n\n')
+        f.write(f'Sample Index: {sample_idx}\n')
+        f.write(f'Token Position: {token_pos}\n\n')
+        
+        # Write probability distribution table
+        f.write(f"{'Token ID':<10} {'Token':<15} {'SFT Model':<15} {'Base Model':<15} {'Diff'}\n")
+        f.write('-' * 65 + '\n')
+        for i, token_id in enumerate(combined_top_k):
+            prob_diff = combined_probs_a[i] - combined_probs_b[i]
+            f.write(f"{token_id:<10} {token_labels[i]:<15} {combined_probs_a[i]:<15.6f} {combined_probs_b[i]:<15.6f} {prob_diff:<15.6f}\n")
+    
+    print(f'Saved image and text {i+1}/50: idx_{sample_idx}_pos_{token_pos}') 

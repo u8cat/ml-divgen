@@ -1,0 +1,23 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ TT ] `` You do what 's right . I do what 's required . ''
+
+<|assistant|>
+
+
+Sample Index: 99
+Token Position: 19
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+1897       ' days'         0.264769        0.293420        -0.028651      
+1107       ' years'        0.243406        0.177671        0.065735       
+3618       ' weeks'        0.155834        0.156585        -0.000751      
+2607       ' months'       0.150844        0.148917        0.001927       
+2069       ' times'        0.062235        0.038711        0.023524       
+3038       ' hours'        0.032495        0.044232        -0.011737      
+187        '\n'            0.014813        0.047587        -0.032774      
+2909       ' minutes'      0.019424        0.025138        -0.005714      
+15513      ' nights'       0.007774        0.013525        -0.005751      
+9506       ' moments'      0.004718        0.005552        -0.000834      

@@ -1,0 +1,23 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] Society reaches a point where we realize the survival of the human race depends on reducing its size by a huge percentage . This is how they decide to do it .
+
+<|assistant|>
+
+
+Sample Index: 75
+Token Position: 33
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+17936      'uke'           0.780388        0.759052        0.021337       
+41757      'ukes'          0.121174        0.136182        -0.015007      
+2788       'uk'            0.080602        0.077208        0.003394       
+19642      'UK'            0.006949        0.010658        -0.003709      
+14         '-'             0.003830        0.004360        -0.000530      
+10579      'UC'            0.000781        0.001570        -0.000789      
+54         'U'             0.000394        0.000841        -0.000447      
+10682      'itrogen'       0.000378        0.000556        -0.000178      
+25501      'uka'           0.000314        0.000456        -0.000142      
+15         '.'             0.000222        0.000385        -0.000163      

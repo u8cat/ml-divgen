@@ -1,0 +1,26 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] Our government has reached a point where they can control everything , and everything costs money including the air that we breathe .
+
+<|assistant|>
+
+
+Sample Index: 80
+Token Position: 42
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+952        ' people'       0.108801        0.117987        -0.009186      
+1821       ' men'          0.074092        0.075924        -0.001833      
+9647       ' soldiers'     0.026939        0.022273        0.004666       
+17269      ' guards'       0.028836        0.019038        0.009797       
+5820       ' workers'      0.027027        0.015024        0.012003       
+2151       ' children'     0.016689        0.017642        -0.000954      
+2872       ' young'        0.009671        0.015067        -0.005396      
+2255       ' women'        0.007947        0.009887        -0.001940      
+12360      ' armed'        0.010039        0.007576        0.002463       
+2806       ' black'        0.007580        0.009619        -0.002039      
+643        ' other'        0.009402        0.007267        0.002135       
+8442       ' figures'      0.009539        0.004962        0.004577       
+1740       ' four'         0.004381        0.008780        -0.004399      

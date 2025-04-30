@@ -1,0 +1,24 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] You are an omnipotent god . Out of boredom you decided to live an ordinary human life vowing not to use your power . 15 years has pass and you have a 9 to 5 working for a major tech company . Your boss has been tormenting you for years and you have reach your limit
+
+<|assistant|>
+
+
+Sample Index: 44
+Token Position: 36
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+15         '.'             0.384518        0.314599        0.069919       
+13         ','             0.253123        0.241093        0.012031       
+1078       ' before'       0.081891        0.052975        0.028916       
+285        ' and'          0.041322        0.064010        -0.022688      
+32         '?'             0.047703        0.045496        0.002207       
+533        ' but'          0.012209        0.031627        -0.019418      
+964        ' .'            0.012870        0.027999        -0.015129      
+275        ' in'           0.013653        0.016933        -0.003280      
+2          '!'             0.019566        0.010220        0.009346       
+432        ' from'         0.008355        0.013319        -0.004964      
+1157       ' ,'            0.004298        0.013513        -0.009215      

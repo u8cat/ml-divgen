@@ -1,0 +1,23 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] People often tell stories about how reflective surfaces like mirrors or pools of water are portals to other worlds . What people do n't tell stories about is how the same is true of shadows .
+
+<|assistant|>
+
+
+Sample Index: 52
+Token Position: 36
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+369        ' was'          0.247344        0.229160        0.018185       
+703        ' she'          0.218147        0.216630        0.001517       
+1537       ' might'        0.221766        0.191454        0.030312       
+352        ' it'           0.098485        0.127227        -0.028742      
+2242       ' lay'          0.049729        0.057522        -0.007793      
+29661      ' lur'          0.029619        0.025043        0.004575       
+253        ' the'          0.019032        0.018169        0.000862       
+812        ' could'        0.019084        0.016599        0.002485       
+651        ' would'        0.014950        0.017829        -0.002879      
+3589       ' wasn'         0.005303        0.006308        -0.001004      

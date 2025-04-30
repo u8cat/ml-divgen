@@ -1,0 +1,24 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ TT ] The journey never ends . The same hero is constantly caught in the cycle of leaving for an adventure , having their adventure , settling down , and being forced to leave again .
+
+<|assistant|>
+
+
+Sample Index: 36
+Token Position: 40
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+22830      ' pretend'      0.712004        0.438382        0.273622       
+1132       ' play'         0.068044        0.083242        -0.015198      
+2165       ' game'         0.048399        0.044347        0.004051       
+1682       ' best'         0.020122        0.039959        -0.019837      
+806        ' first'        0.014183        0.039357        -0.025174      
+794        ' fun'          0.016805        0.032194        -0.015389      
+1416       ' name'         0.016784        0.031494        -0.014710      
+2926       ' story'        0.007413        0.020273        -0.012860      
+3064       ' difference'   0.004796        0.016870        -0.012074      
+3215       ' pret'         0.009433        0.012148        -0.002716      
+954        ' most'         0.004219        0.012734        -0.008515      

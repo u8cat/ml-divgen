@@ -1,0 +1,25 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] scientists have invented a serum that allows animals to speak . Your dog was recently given the serum , but it appears the treatment has not worked . Your cousin , whom you have n't seen since your youth , comes to town to visit . As the door opens , your dog suddenly whispers in your ear : `` run . ''
+
+<|assistant|>
+
+
+Sample Index: 8
+Token Position: 20
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+4370       ' dog'          0.035959        0.155874        -0.119915      
+2798       ' heart'        0.085830        0.072163        0.013667       
+2564       ' mind'         0.064838        0.058175        0.006663       
+2927       ' eyes'         0.074224        0.035841        0.038382       
+19338      ' cousin'       0.023220        0.080394        -0.057175      
+4318       ' voice'        0.061461        0.036466        0.024995       
+3331       ' friend'       0.033156        0.047302        -0.014146      
+3998       ' brain'        0.029467        0.022035        0.007432       
+13372      ' assistant'    0.048947        0.000538        0.048409       
+1481       ' head'         0.025701        0.022838        0.002863       
+4475       ' wife'         0.009042        0.033151        -0.024110      
+2454       ' face'         0.024166        0.013824        0.010342       

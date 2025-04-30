@@ -1,0 +1,25 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] The narrator has a huge crush on the protagonist . It 's really starting to creep the protagonist out .
+
+<|assistant|>
+
+
+Sample Index: 17
+Token Position: 48
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+187        '\n'            0.925735        0.954058        -0.028323      
+586        '\n '           0.025681        0.009682        0.015999       
+186        '\t'            0.013840        0.017734        -0.003894      
+535        '\n\n'          0.005034        0.006880        -0.001846      
+0          '<|endoftext|>' 0.008843        0.000064        0.008779       
+1744       '\n\n '         0.004996        0.002050        0.002946       
+19668      '\n \n'         0.002969        0.001813        0.001157       
+575        '\xa0'          0.002007        0.001320        0.000686       
+12593      '\n \n '        0.001442        0.001044        0.000398       
+623        '\t\t'          0.000962        0.001123        -0.000161      
+46603      '\n\n \n'       0.001096        0.000640        0.000456       
+209        ' '             0.001251        0.000022        0.001229       

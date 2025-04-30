@@ -1,0 +1,23 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] You tell Death that you will never tire of living no matter how long you live . It makes you a bet that you will and thus grants you true immortality . You 've just lived through the second death of the universe and show no sign of stopping . Death is baffled .
+
+<|assistant|>
+
+
+Sample Index: 62
+Token Position: 25
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+790        'ons'           0.998624        0.997896        0.000728       
+251        'on'            0.000895        0.001149        -0.000255      
+19844      'onies'         0.000301        0.000610        -0.000309      
+35427      'ONS'           0.000024        0.000031        -0.000007      
+70         'e'             0.000014        0.000034        -0.000020      
+11168      'onom'          0.000017        0.000027        -0.000010      
+2487       'ones'          0.000013        0.000027        -0.000014      
+263        'or'            0.000009        0.000020        -0.000011      
+735        'vers'          0.000009        0.000013        -0.000004      
+5120       'onic'          0.000006        0.000013        -0.000007      

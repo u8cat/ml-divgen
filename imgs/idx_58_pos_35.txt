@@ -1,0 +1,25 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] You are 100 % convinced that you are the sole surviving member of the human race , despite the fact that today is your first appointment with a shrink for the very same reason .
+
+<|assistant|>
+
+
+Sample Index: 58
+Token Position: 35
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+779        ' him'          0.796687        0.772286        0.024401       
+521        ' his'          0.081229        0.094701        -0.013471      
+253        ' the'          0.048341        0.055750        -0.007409      
+436        ' this'         0.014106        0.013645        0.000461       
+731        ' them'         0.006905        0.010812        -0.003907      
+479        ' me'           0.007070        0.002388        0.004682       
+619        ' my'           0.006070        0.001163        0.004907       
+247        ' a'            0.003092        0.003903        -0.000811      
+617        ' her'          0.001777        0.003491        -0.001714      
+352        ' it'           0.001099        0.001756        -0.000657      
+616        ' their'        0.001093        0.001735        -0.000642      
+441        ' us'           0.001813        0.000581        0.001232       

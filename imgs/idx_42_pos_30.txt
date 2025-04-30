@@ -1,0 +1,23 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] One day , while petting your cat , you accidentally pull his tail , and it opens up . Inside , there 's a USB connector . You connect it to your laptop , an announcement pops up . -Cat Version : 1.0.0 . Update to 256.3 ?
+
+<|assistant|>
+
+
+Sample Index: 42
+Token Position: 30
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+896        ' back'         0.161060        0.147582        0.013478       
+347        ' as'           0.132945        0.146315        -0.013371      
+275        ' in'           0.091151        0.091359        -0.000208      
+1475       ' around'       0.064535        0.073316        -0.008781      
+285        ' and'          0.059238        0.050911        0.008327       
+15         '.'             0.042351        0.049956        -0.007605      
+432        ' from'         0.042900        0.045953        -0.003053      
+1411       ' against'      0.046962        0.032617        0.014345       
+949        ' through'      0.047857        0.031160        0.016697       
+2439       ' across'       0.033770        0.031436        0.002333       

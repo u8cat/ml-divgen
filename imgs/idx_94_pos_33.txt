@@ -1,0 +1,23 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] A overwhelming army approaches , you stand at the helm of your soldiers . What do you say ?
+
+<|assistant|>
+
+
+Sample Index: 94
+Token Position: 33
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+1977       ' away'         0.278281        0.217539        0.060742       
+407        ' by'           0.159262        0.132897        0.026365       
+347        ' as'           0.137340        0.132504        0.004835       
+432        ' from'         0.070706        0.072127        -0.001420      
+281        ' to'           0.057179        0.069649        -0.012469      
+715        ' into'         0.036665        0.042161        -0.005495      
+285        ' and'          0.037422        0.036713        0.000709       
+1557       ' care'         0.024613        0.039424        -0.014811      
+18897      ' prisoner'     0.019811        0.022491        -0.002680      
+37435      ' captive'      0.020761        0.020426        0.000335       

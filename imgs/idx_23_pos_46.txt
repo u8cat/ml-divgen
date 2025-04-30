@@ -1,0 +1,24 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] A story where all the dialogue is lyrics from your favorite song .
+
+<|assistant|>
+
+
+Sample Index: 23
+Token Position: 46
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+247        ' a'            0.430860        0.396595        0.034265       
+253        ' the'          0.188008        0.178655        0.009353       
+512        ' all'          0.049456        0.061510        -0.012054      
+271        ' an'           0.029584        0.028534        0.001049       
+8783       ' lots'         0.021577        0.023416        -0.001839      
+776        ' our'          0.015637        0.017311        -0.001674      
+767        ' two'          0.013558        0.016581        -0.003023      
+594        ' so'           0.010144        0.009510        0.000634       
+1264       ' three'        0.007921        0.010011        -0.002090      
+281        ' to'           0.006952        0.009524        -0.002572      
+1943       ' big'          0.007895        0.006432        0.001464       

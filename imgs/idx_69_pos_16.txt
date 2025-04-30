@@ -1,0 +1,25 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] You are a genius inventor , however every time you are about to publish your work someone else does it before you leaving you with no credit . Suddenly , you have the idea to invent a time machine and go back in time to steal your own finished work before others do .
+
+<|assistant|>
+
+
+Sample Index: 69
+Token Position: 16
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+257        'en'            0.974055        0.970755        0.003300       
+619        ' my'           0.007922        0.008618        -0.000696      
+253        ' the'          0.005090        0.005348        -0.000258      
+561        'ens'           0.000940        0.001135        -0.000194      
+247        ' a'            0.000916        0.001054        -0.000138      
+17628      ' grip'         0.000724        0.000574        0.000151       
+287        'ro'            0.000466        0.000638        -0.000172      
+423        'end'           0.000392        0.000325        0.000067       
+1051       '...'           0.000141        0.000437        -0.000296      
+352        ' it'           0.000238        0.000311        -0.000073      
+187        '\n'            0.000120        0.000323        -0.000202      
+14         '-'             0.000246        0.000195        0.000050       

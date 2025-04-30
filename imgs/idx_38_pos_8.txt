@@ -1,0 +1,23 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] The Chernobyl disaster was all a conspiracy and there was actually no radioactive meltdown . Something much worse happened there , and you 're the conspiracy theorist who just figured it out..
+
+<|assistant|>
+
+
+Sample Index: 38
+Token Position: 8
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+373        'res'           0.108097        0.203567        -0.095471      
+21061      'resolution'    0.114792        0.151023        -0.036231      
+15177      'quality'       0.111070        0.132205        -0.021134      
+27094      'bud'           0.142396        0.064109        0.078287       
+2364       'key'           0.073009        0.040387        0.032622       
+11125      'fi'            0.036122        0.071701        -0.035579      
+2134       'angle'         0.044725        0.038562        0.006162       
+5251       'level'         0.057616        0.024581        0.033035       
+17556      'tech'          0.038107        0.029171        0.008936       
+71         'f'             0.031693        0.019645        0.012048       

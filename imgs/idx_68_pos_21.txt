@@ -1,0 +1,24 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ WP ] Science is actually a government conspiracy against magical beings . Magic is strongest when believed in so teaching things like how viruses not curses cause diseases weakens witches/wizards/etc that could harm the human race .
+
+<|assistant|>
+
+
+Sample Index: 68
+Token Position: 21
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+253        ' the'          0.163954        0.125040        0.038915       
+479        ' me'           0.110557        0.102484        0.008073       
+581        ' one'          0.075990        0.105552        -0.029562      
+617        ' her'          0.030847        0.025824        0.005023       
+779        ' him'          0.016015        0.026120        -0.010105      
+619        ' my'           0.013194        0.015715        -0.002521      
+500        ' J'            0.010564        0.011157        -0.000594      
+1930       ' side'         0.008204        0.008119        0.000085       
+611        ' K'            0.007965        0.005906        0.002059       
+353        ' M'            0.005046        0.006278        -0.001232      
+544        ' ['            0.008892        0.002332        0.006560       

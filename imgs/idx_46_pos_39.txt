@@ -1,0 +1,24 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ FF ] `` The weapon that won the war '' ( Feedback for every response . ) 400 words or less .
+
+<|assistant|>
+
+
+Sample Index: 46
+Token Position: 39
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+310        ' is'           0.421297        0.380579        0.040717       
+369        ' was'          0.384684        0.370228        0.014456       
+13         ','             0.123721        0.155876        -0.032155      
+497        ' were'         0.017053        0.016013        0.001040       
+403        ' are'          0.011276        0.010933        0.000343       
+1157       ' ,'            0.004926        0.013380        -0.008454      
+326        ' that'         0.006478        0.010354        -0.003876      
+2167       ' though'       0.007086        0.004406        0.002679       
+556        ' has'          0.002316        0.003236        -0.000920      
+15         '.'             0.001154        0.003048        -0.001894      
+2299       ' however'      0.001477        0.001629        -0.000152      

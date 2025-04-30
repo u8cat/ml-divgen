@@ -1,0 +1,24 @@
+Prefix:
+<|user|>
+Write a creative story based on the following prompt:
+[ wp ] Years ago , you made a deal with the Devil to be granted a single wish . All your memories of the deal were then wiped . Years later , your wish is fulfilled and you are about to find out what price your younger self was willing to pay to make it come true .
+
+<|assistant|>
+
+
+Sample Index: 25
+Token Position: 27
+
+Token ID   Token           SFT Model       Base Model      Diff
+-----------------------------------------------------------------
+812        ' could'        0.161436        0.127319        0.034117       
+3260       ' knew'         0.145223        0.136938        0.008286       
+476        ' can'          0.054072        0.059825        -0.005753      
+1694       ' got'          0.060223        0.052731        0.007491       
+310        ' is'           0.052978        0.052558        0.000420       
+7303       ' managed'      0.049125        0.049969        -0.000844      
+6057       ' knows'        0.048181        0.049444        -0.001263      
+369        ' was'          0.047299        0.039300        0.008000       
+556        ' has'          0.031243        0.033838        -0.002596      
+574        ' had'          0.028612        0.030066        -0.001454      
+1014       ' even'         0.027660        0.030555        -0.002895      
