@@ -5,6 +5,7 @@ import numpy as np
 from functools import partial
 from multiprocessing.pool import Pool
 from nltk.translate.bleu_score import SmoothingFunction, sentence_bleu
+from tqdm import tqdm
 
 model_list = [
     'EleutherAI/pythia-2.8b',
@@ -45,11 +46,11 @@ def distinctness(generations: Iterable[list[str]]):
 
 def bleu_i(weights, all_sentences, smoothing_function, i):
     # noinspection PyTypeChecker
-    return sentence_bleu(
+    return np.array(sentence_bleu(
         references=all_sentences[:i] + all_sentences[i + 1:],
         hypothesis=all_sentences[i],
         weights=weights,
-        smoothing_function=smoothing_function)
+        smoothing_function=smoothing_function))
 
 def self_bleu(generations: Iterable[list[str]], n_sample=1000):
     random.seed(0)
@@ -61,22 +62,24 @@ def self_bleu(generations: Iterable[list[str]], n_sample=1000):
         all_sentences += gens
     n_sample = min(n_sample, len(all_sentences))
 
-    # pool = Pool(processes=os.cpu_count())
-    bleus = []
-    for weights in [
+    pool = Pool(processes=os.cpu_count())
+    weights = [
         (1.0, 0, 0, 0),
         (0.5, 0.5, 0, 0),
         (1.0 / 3, 1.0 / 3, 1.0 / 3, 0),
         (0.25, 0.25, 0.25, 0.25),
-        (0.2, 0.2, 0.2, 0.2, 0.2)]:
+        (0.2, 0.2, 0.2, 0.2, 0.2)]
 
-        bleus.append(sum(map(
+    bleus = sum(tqdm(
+        pool.imap_unordered(
             partial(bleu_i, weights, all_sentences, smoothing_function),
-            random.sample(range(len(all_sentences)), n_sample)
-            )) / n_sample)
+            random.sample(range(len(all_sentences)), n_sample)),
+        total=n_sample,
+        smoothing=0.0,
+        desc=f"bleu")) / n_sample
 
-    # pool.close()
-    # pool.join()
+    pool.close()
+    pool.join()
 
     return bleus
 
@@ -88,15 +91,16 @@ if __name__ == '__main__':
             results: list[dict[str,str]] = json.load(f)
         assert len(results) == num_samples
 
-        dist1, dist2, dist3 = distinctness(map(lambda r: [r['generated']], results))
-        blues1, blues2, blues3, blues4, blues5 = self_bleu(map(lambda r: [r['generated']], results))
+    generations = list(map(lambda r: [r['generated']], results))
+    dist1, dist2, dist3 = distinctness(generations)
+    blues1, blues2, blues3, blues4, blues5 = self_bleu(generations)
 
-        print(f'# {model_name_or_path}')
-        print(f'dist1 = {dist1:.4f}')
-        print(f'dist2 = {dist2:.4f}')
-        print(f'dist3 = {dist3:.4f}')
-        # print(f'blues1 = {blues1:.4f}')
-        # print(f'blues2 = {blues2:.4f}')
-        # print(f'blues3 = {blues3:.4f}')
-        print(f'blues4 = {blues4:.4f}')
-        # print(f'blues5 = {blues5:.4f}')
+    print(f'# {model_name_or_path}')
+    print(f'dist1 = {dist1:.4f}')
+    print(f'dist2 = {dist2:.4f}')
+    print(f'dist3 = {dist3:.4f}')
+    print(f'blues1 = {blues1:.4f}')
+    print(f'blues2 = {blues2:.4f}')
+    print(f'blues3 = {blues3:.4f}')
+    print(f'blues4 = {blues4:.4f}')
+    print(f'blues5 = {blues5:.4f}')
