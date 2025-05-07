@@ -10,7 +10,7 @@ import json
 from utils import apply_template
 
 
-def generate_samples(model_name_or_path, num_samples, generation_config, dataset_name, dataset_split, batch_size=4, device='cpu'):
+def generate_samples(model_name_or_path, num_samples, generation_config, dataset_name, dataset_split, device='cpu'):
     """
     Generate samples from a pre-trained model.
     Args:
@@ -141,9 +141,9 @@ def main():
     
     model_list = [
         'EleutherAI/pythia-2.8b',
-        # 'ContextualAI/archangel_sft_pythia2-8b',
-        # 'ContextualAI/archangel_sft-ppo_pythia2-8b',
-        # 'ContextualAI/archangel_sft-dpo_pythia2-8b',
+        'ContextualAI/archangel_sft_pythia2-8b',
+        'ContextualAI/archangel_sft-ppo_pythia2-8b',
+        'ContextualAI/archangel_sft-dpo_pythia2-8b',
     ]
     
     for model_name_or_path in model_list:

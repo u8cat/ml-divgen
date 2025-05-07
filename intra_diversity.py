@@ -88,7 +88,7 @@ for model_name_or_path in model_list:
     assert len(results) == num_samples
 
     dist1, dist2, dist3 = distinctness(map(lambda r: [r['generated']], results))
-    blues1, blues2, blues3, blues4, blues5 = self_bleu(map(lambda r: [r['generated']], results))
+    # blues1, blues2, blues3, blues4, blues5 = self_bleu(map(lambda r: [r['generated']], results))
 
     print(f'# {model_name_or_path}')
     print(f'dist1 = {dist1:.4f}')
@@ -97,5 +97,5 @@ for model_name_or_path in model_list:
     # print(f'blues1 = {blues1:.4f}')
     # print(f'blues2 = {blues2:.4f}')
     # print(f'blues3 = {blues3:.4f}')
-    print(f'blues4 = {blues4:.4f}')
+    # print(f'blues4 = {blues4:.4f}')
     # print(f'blues5 = {blues5:.4f}')
