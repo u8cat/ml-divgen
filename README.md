@@ -3,6 +3,7 @@
 ### To do
 - [ ] Check the generated logits
 - [ ] Generate on 1k samples
+<<<<<<< HEAD
 - [ ] Plots 
   
 ### Data format
@@ -18,3 +19,6 @@
 ### Updates and Acknowledgements
 * 2025-04-21: Added the generation mode in `diversity_gen.py`. 
 * 2025-04-19: Thx Bale for generating logits and beautifully written code for plots (Bale: in colab with copilot XD).
+=======
+- [ ] Plots 
+>>>>>>> f1f8b9e (generation code)
