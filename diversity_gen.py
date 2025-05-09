@@ -15,7 +15,7 @@ def generate_samples(model_name_or_path, num_samples, generation_config, dataset
     Generate samples from a pre-trained model.
     Args:
         model_name_or_path (str): Path to the pre-trained model.
-        num_samples (int): Number of samples to generate.
+        num_samples (int): Number of samples to use from the dataset.
         generation_config: Configuration for text generation.
         dataset_name (str): Dataset to use for generation.
         dataset_split (str): Dataset split to use for generation.
@@ -27,10 +27,9 @@ def generate_samples(model_name_or_path, num_samples, generation_config, dataset
             "generated": str: the generated text
         }
     """
-    model = transformers.AutoModelForCausalLM.from_pretrained(model_name_or_path)
+    model = transformers.AutoModelForCausalLM.from_pretrained(model_name_or_path, torch_dtype=torch.bfloat16)
     tokenizer = transformers.AutoTokenizer.from_pretrained(model_name_or_path)
-    tokenizer.pad_token = tokenizer.eos_token if tokenizer.pad_token is None else tokenizer.pad_token
-    tokenizer.padding_side="left"
+    tokenizer.pad_token_id = tokenizer.eos_token_id if tokenizer.pad_token_id is None else tokenizer.pad_token_id
 
     model = model.to(device)
     model.eval()
@@ -49,12 +48,13 @@ def generate_samples(model_name_or_path, num_samples, generation_config, dataset
         output_ids = model.generate(
             input_ids=inputs.input_ids,
             attention_mask=inputs.attention_mask,
-            generation_config=generation_config
+            generation_config=generation_config,
+            pad_token_id=tokenizer.pad_token_id,
         )
         
-        new_tokens = output_ids[0, prompt_length:]
-        generated_text = tokenizer.decode(new_tokens, skip_special_tokens=True)
-        
+        new_tokens = output_ids[:, prompt_length:]
+        generated_text = tokenizer.batch_decode(new_tokens, skip_special_tokens=True)
+
         samples.append({
             "prompt": prompt,
             "generated": generated_text,
@@ -126,12 +126,13 @@ def main():
     parser.add_argument("--dataset_split", type=str, default="validation")
     parser.add_argument("--max_length", type=int, default=50, help="Maximum length of story tokens, where we obtain logits upon.")
     parser.add_argument("--device", type=str, default="cuda")
-    parser.add_argument("--mode", type=str, choices=["generate", "get_logits"], default="get_logits",
+    parser.add_argument("--mode", type=str, choices=["generate", "get_logits"], default="generate",
                         help="Mode to run: generate samples or get logits")
     
     # Generation parameters
     parser.add_argument("--max_new_tokens", type=int, default=256, help="Maximum number of new tokens to generate")
     parser.add_argument("--temperature", type=float, default=1.0, help="Temperature for sampling")
+    parser.add_argument("--num_return_sequences", type=int, default=1, help="Number of sequences to return")
     
     args = parser.parse_args()
     
@@ -166,6 +167,7 @@ def main():
             
         elif args.mode == "generate":
             generation_config = transformers.GenerationConfig(
+                num_return_sequences=args.num_return_sequences,
                 max_new_tokens=args.max_new_tokens,
                 temperature=args.temperature,
                 do_sample=True,
@@ -177,7 +179,7 @@ def main():
             )
             
             # Save generations in JSON format
-            output_file = f"{args.output_dir}/{model_name_or_path.replace('/', '_')}_{args.dataset_name.replace('/', '_')}_{args.dataset_split}_generations_{args.num_samples}.json"
+            output_file = f"{args.output_dir}/{model_name_or_path.replace('/', '_')}_{args.dataset_name.replace('/', '_')}_{args.dataset_split}_generations_{args.num_samples}_nseq{args.num_return_sequences}.json"
             
             with open(output_file, "w") as f:
                 json.dump(samples, f, indent=2)
